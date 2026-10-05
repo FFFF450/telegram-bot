@@ -16,7 +16,7 @@ from telegram.ext import (
 )
 
 # ==================== الإعدادات ====================
-BOT_TOKEN = "ضع توكن البوت هنا"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHUNK_PAGES = 40          # عدد الصفحات لكل جزء (قللها لو الكتب معقدة)
 MAX_CHARS_PER_TTS = 1800  # حد آمن لـ edge-tts
 TEMP_DIR = Path("./bot_temp")
